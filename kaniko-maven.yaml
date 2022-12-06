@@ -17,7 +17,7 @@ spec:
         app: maven
     spec:
       containers:
-      - image: duniaalk/kaniko-maven
+      - image: duniaalk/kaniko-maven:10
         imagePullPolicy: Always
         name: maven
 
