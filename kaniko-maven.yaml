@@ -25,16 +25,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  labels:
-    app: maven
   name: maven
-  namespace: jenkins
 spec:
-  ports:
-  - nodePort: 30000
-    port: 80
-    protocol: TCP
-    targetPort: 8080
   selector:
-    app: maven
+    app: nodeapp 
   type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+    nodePort: 31110
