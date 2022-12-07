@@ -25,10 +25,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodeapp-service-maven
+  name: maven
 spec:
   selector:
-    app: nodeapp 
+    app: maven
   type: LoadBalancer
   ports:
   - protocol: TCP
